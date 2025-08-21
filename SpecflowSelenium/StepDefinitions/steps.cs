@@ -22,7 +22,8 @@ namespace SpecflowSelenium.StepDefinitions
         }
         
         [When(@"I Click On '([^']*)'")]
-      
+
+        public void WhenIClickOn(string Page)
         {  
             if (Page == "Elements")
                 homePage.ClickOnMenu(Page);
